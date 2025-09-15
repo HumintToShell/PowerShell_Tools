@@ -1,3 +1,19 @@
+<#
+.SYNOPSIS
+  Quick triage tool to check AD computer reachability by site prefix.
+
+.DESCRIPTION
+  Queries multiple OUs for computers matching a prefix, pings each,
+  and displays results in an interactive grid view. Designed for fast,
+  disposable use by admins during user connectivity calls.
+
+.NOTES
+  - No elevation required
+  - Run via right-click → "Run with PowerShell"
+  - Results are not logged or persisted
+  - Built by HumintToShell for Modularity, operational clarity, and teachable
+#>
+
 # Select which group of computers you want to ping
 Read-Host "Computer Name Prefix / Location"
 
